@@ -74,3 +74,69 @@
 .splash-btn:active {
   transform: translateY(0);
 }
+
+/* ── Tablet ────────────────────────────────── */
+@media (max-width: 768px) {
+  .splash-content {
+    bottom: 100px;
+    gap: 6px;
+  }
+
+  .splash-name {
+    font-size: 1.6rem;
+  }
+
+  .splash-sub {
+    font-size: 0.88rem;
+  }
+
+  .splash-btn {
+    padding: 11px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ── Mobile ────────────────────────────────── */
+@media (max-width: 480px) {
+  .splash-content {
+    bottom: 72px;
+    gap: 5px;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .splash-name {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .splash-sub {
+    font-size: 0.82rem;
+    text-align: center;
+  }
+
+  .splash-btn {
+    width: 90%;
+    max-width: 320px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* ── Very small screens ─────────────────────── */
+@media (max-width: 360px) {
+  .splash-name {
+    font-size: 1.2rem;
+  }
+
+  .splash-sub {
+    font-size: 0.78rem;
+  }
+
+  .splash-btn {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+}

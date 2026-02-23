@@ -25,7 +25,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
   return (
     <div className="lanyard-wrapper">
       <Canvas
-        camera={{ position: position, fov: fov }}
+        camera={{ position: isMobile ? [0, 0, 14] : position, fov: isMobile ? 28 : fov }}
         dpr={[1, isMobile ? 1.5 : 2]}
         gl={{ alpha: transparent }}
         onCreated={({ gl }) => gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)}
@@ -48,7 +48,8 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
 
 function CameraRig() {
   const { camera } = useThree();
-  useFrame(() => camera.lookAt(0, -1, 0));
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  useFrame(() => camera.lookAt(0, isMobile ? 0 : -1, 0));
   return null;
 }
 
