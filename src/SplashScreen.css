@@ -28,6 +28,8 @@
   gap: 8px;
   z-index: 5;
   width: 100%;
+  padding: 0 16px;
+  text-align: center;
 }
 
 .splash-logo {
@@ -63,6 +65,7 @@
   transition: all 0.25s ease;
   box-shadow: 0 4px 16px rgba(157, 101, 201, 0.4);
   font-family: 'Inter', sans-serif;
+  white-space: nowrap;
 }
 
 .splash-btn:hover {
@@ -73,4 +76,90 @@
 
 .splash-btn:active {
   transform: translateY(0);
+}
+
+/* ── Tablet (≤768px) ─────────────────────────────── */
+@media (max-width: 768px) {
+  .splash-content {
+    bottom: 100px;
+    gap: 6px;
+  }
+
+  .splash-name {
+    font-size: 1.6rem;
+  }
+
+  .splash-sub {
+    font-size: 0.9rem;
+  }
+
+  .splash-btn {
+    padding: 11px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ── Mobile portrait (≤480px) ────────────────────── */
+@media (max-width: 480px) {
+  .splash-content {
+    bottom: 60px;
+    gap: 5px;
+  }
+
+  .splash-name {
+    font-size: 1.4rem;
+    letter-spacing: -0.3px;
+  }
+
+  .splash-sub {
+    font-size: 0.82rem;
+  }
+
+  .splash-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    margin-top: 6px;
+  }
+}
+
+/* ── Very small screens (≤360px) ─────────────────── */
+@media (max-width: 360px) {
+  .splash-content {
+    bottom: 40px;
+  }
+
+  .splash-name {
+    font-size: 1.25rem;
+  }
+
+  .splash-sub {
+    font-size: 0.78rem;
+  }
+
+  .splash-btn {
+    padding: 9px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ── Short screens / landscape mobile (height ≤500px) */
+@media (max-height: 500px) {
+  .splash-content {
+    bottom: 20px;
+    gap: 4px;
+  }
+
+  .splash-name {
+    font-size: 1.2rem;
+  }
+
+  .splash-sub {
+    font-size: 0.78rem;
+  }
+
+  .splash-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
 }

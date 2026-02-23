@@ -11,3 +11,8 @@ html, body, #root {
   background: #f5f0ff;
   font-family: 'Inter', sans-serif;
 }
+
+/* Prevent touch scroll from interfering with 3D drag */
+canvas {
+  touch-action: none;
+}
