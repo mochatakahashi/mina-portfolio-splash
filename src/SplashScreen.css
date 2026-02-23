@@ -1,0 +1,76 @@
+.splash {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f0ff 0%, #e8d5ff 50%, #d4b8f0 100%);
+  overflow: hidden;
+}
+
+/* Lanyard fills entire screen */
+.splash-lanyard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Content overlaid at bottom center */
+.splash-content {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 5;
+  width: 100%;
+}
+
+.splash-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.splash-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d1b4e;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.splash-sub {
+  font-size: 0.95rem;
+  color: #5a3d7a;
+  margin: 0;
+}
+
+.splash-btn {
+  margin-top: 8px;
+  padding: 12px 32px;
+  background: #9D65C9;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(157, 101, 201, 0.4);
+  font-family: 'Inter', sans-serif;
+}
+
+.splash-btn:hover {
+  background: #8850b8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(157, 101, 201, 0.55);
+}
+
+.splash-btn:active {
+  transform: translateY(0);
+}
