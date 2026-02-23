@@ -78,7 +78,11 @@
   transform: translateY(0);
 }
 
+<<<<<<< HEAD
 /* ── Tablet (≤768px) ─────────────────────────────── */
+=======
+/* ── Tablet ────────────────────────────────── */
+>>>>>>> e9d61b9abb35593b9f18a850cc7f1e9c34f16811
 @media (max-width: 768px) {
   .splash-content {
     bottom: 100px;
@@ -90,7 +94,11 @@
   }
 
   .splash-sub {
+<<<<<<< HEAD
     font-size: 0.9rem;
+=======
+    font-size: 0.88rem;
+>>>>>>> e9d61b9abb35593b9f18a850cc7f1e9c34f16811
   }
 
   .splash-btn {
@@ -99,6 +107,7 @@
   }
 }
 
+<<<<<<< HEAD
 /* ── Mobile portrait (≤480px) ────────────────────── */
 @media (max-width: 480px) {
   .splash-content {
@@ -109,10 +118,26 @@
   .splash-name {
     font-size: 1.4rem;
     letter-spacing: -0.3px;
+=======
+/* ── Mobile ────────────────────────────────── */
+@media (max-width: 480px) {
+  .splash-content {
+    bottom: 72px;
+    gap: 5px;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .splash-name {
+    font-size: 1.35rem;
+    text-align: center;
+>>>>>>> e9d61b9abb35593b9f18a850cc7f1e9c34f16811
   }
 
   .splash-sub {
     font-size: 0.82rem;
+<<<<<<< HEAD
   }
 
   .splash-btn {
@@ -149,6 +174,22 @@
     gap: 4px;
   }
 
+=======
+    text-align: center;
+  }
+
+  .splash-btn {
+    width: 90%;
+    max-width: 320px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* ── Very small screens ─────────────────────── */
+@media (max-width: 360px) {
+>>>>>>> e9d61b9abb35593b9f18a850cc7f1e9c34f16811
   .splash-name {
     font-size: 1.2rem;
   }
@@ -158,8 +199,13 @@
   }
 
   .splash-btn {
+<<<<<<< HEAD
     padding: 8px 20px;
     font-size: 0.85rem;
     margin-top: 4px;
+=======
+    font-size: 0.85rem;
+    padding: 10px 16px;
+>>>>>>> e9d61b9abb35593b9f18a850cc7f1e9c34f16811
   }
 }
